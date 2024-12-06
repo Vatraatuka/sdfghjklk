@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TENTANG KAMPUS</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Mengatur latar belakang video */
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Mencegah scroll pada halaman */
+      }
+
+      /* Video latar belakang */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Agar video memenuhi layar */
+        z-index: -1; /* Menempatkan video di bawah konten lainnya */
+      }
+
+      .container {
+        position: relative;
+        z-index: 1; /* Menempatkan konten di atas video */
+        background-color: rgba(255, 255, 255, 0.8); /* Efek transparansi */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 50px auto;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #666;
+      }
+
+      .nav-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .nav-buttons a {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1em;
+      }
+
+      .nav-buttons a:hover {
+        background-color: #45a049;
+      }
+
+      /* Dropdown menu styling */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #45a049;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4caf50;
+        min-width: 160px;
+        z-index: 1;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 1em;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #45a049;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+    <script>
+      // Mengarahkan pengguna setelah 5 detik (5000 ms)
+      setTimeout(function () {
+        window.location.href = ""; // Ganti dengan URL tujuan Anda
+      }, 5000);
+    </script>
+  </head>
+
+  <body>
+    <!-- Latar Belakang Video -->
+    <video class="video-background" autoplay loop muted>
+      <source
+        src="Telematika Dalam Kejadian Fraud di Rumah Sakit.mp4"
+        type="video/mp4"
+      />
+      <!-- Ganti URL video dengan yang sesuai -->
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+      <h1>STIKES BAKTARA</h1>
+      <p>Anda akan diarahkan ke halaman baru dalam 5 detik...</p>
+      <p>
+        Jika tidak, silakan
+        <a href="https://stikes-baktara.ac.id/">klik di sini</a>.
+      </p>
+
+      <!-- Tombol Navigasi Menu untuk Promosi Kampus -->
+      <div class="nav-buttons">
+        <a href="dashboard.html"><i class="fa fa-home"></i> Home</a>
+        <a href="Lokasi.html"><i class="fa fa-globe"></i> Lokasi</a>
+        <a href="Profil.html"><i class="fa fa-user"></i> Profil</a>
+
+        <!-- Menu Promosi Kampus -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            Promosi Kampus <i class="fa fa-bullhorn"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

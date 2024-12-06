@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - KULIAH PAKAR</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Mencegah scroll pada halaman */
+      }
+
+      /* Video latar belakang */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Agar video memenuhi layar */
+        z-index: -1; /* Menempatkan video di bawah konten */
+      }
+
+      .container {
+        background-color: hsla(0, 2%, 49%, 0.8); /* Efek transparansi */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        max-width: 800px;
+        margin: 100px auto;
+        text-align: left;
+      }
+
+      h1 {
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      p {
+        color: hsl(0, 0%, 97%);
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .team-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      /* Menu Toggle Button */
+      .menu-toggle {
+        display: none;
+        font-size: 1.5em;
+        padding: 10px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      /* Media query untuk tampilan ponsel potret */
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        .w3-bar {
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .menu-toggle.active + .w3-bar {
+          display: flex;
+        }
+
+        .w3-bar-item {
+          padding: 10px 5px;
+          font-size: 1em;
+          display: block;
+          text-align: left;
+        }
+      }
+
+      /* Ubah warna menu menjadi putih */
+      .w3-theme-d2 {
+        background-color: white !important;
+      }
+
+      .w3-bar-item {
+        color: #333333 !important;
+      }
+
+      .w3-bar-item:hover {
+        background-color: #f0f0f0 !important;
+      }
+    </style>
+  </head>
+
+  <body class="w3-theme-l5">
+    <!-- Latar Belakang Video -->
+    <video class="video-background" autoplay loop muted>
+      <source src="backgroun 2.mp4" type="video/mp4" />
+      <!-- Ganti URL video dengan yang sesuai -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</span>
+        <div class="w3-bar">
+          <!-- Tambahkan menu bar item sesuai kebutuhan -->
+          <a href="#" class="w3-bar-item w3-button">Beranda</a>
+          <a href="#" class="w3-bar-item w3-button">Tentang Kami</a>
+          <a href="#" class="w3-bar-item w3-button">Kontak</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konten utama -->
+    <main>
+      <div class="container">
+        <h1>Tentang Kami</h1>
+        <p>
+          KULIAH PAKAR adalah platform pendidikan yang bertujuan untuk
+          menyediakan materi dan informasi berkualitas tinggi bagi mahasiswa dan
+          profesional di Indonesia. Kami berdedikasi untuk mendukung
+          perkembangan ilmu pengetahuan dan keahlian melalui berbagai program
+          pelatihan dan seminar yang dipandu oleh para pakar di bidangnya.
+        </p>
+
+        <p>
+          Dengan adanya platform ini, kami berharap dapat meningkatkan kualitas
+          pendidikan dan memberikan akses yang mudah bagi siapa saja yang ingin
+          belajar dan berkembang. Melalui program-program yang kami adakan, kami
+          bekerja sama dengan institusi pendidikan dan tenaga ahli untuk
+          memberikan yang terbaik bagi para peserta.
+        </p>
+
+        <img src="PROMOSI.png" alt="Foto Tim Kami" class="team-photo" />
+
+        <p>
+          Kami percaya bahwa pengetahuan adalah kunci untuk perubahan dan
+          kemajuan. Kami berharap Anda bisa menjadi bagian dari perjalanan kami
+          untuk mengembangkan potensi dan keahlian melalui pendidikan yang
+          bermutu.
+        </p>
+
+        <p>
+          <strong>Visi:</strong> Menjadi platform pendidikan terkemuka yang
+          menyediakan akses belajar berkualitas bagi masyarakat Indonesia.
+        </p>
+        <p>
+          <strong>Misi:</strong> Memberikan pelatihan terbaik dan program
+          pembelajaran yang relevan dengan kebutuhan industri serta meningkatkan
+          kemampuan individu untuk menghadapi tantangan global.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu-toggle").classList.toggle("active");
+        document.querySelector(".w3-bar").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil - KULIAH PAKAR</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Latar belakang video */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Video latar belakang */
+      video.background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Pastikan video ada di belakang konten */
+      }
+
+      .container {
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 100px auto;
+        text-align: center;
+        z-index: 1; /* Agar konten berada di atas video */
+        position: relative;
+      }
+
+      h1 {
+        color: hsl(270, 14%, 91%);
+        margin-bottom: 20px;
+      }
+
+      .profile-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        object-fit: cover;
+      }
+
+      .profile-info {
+        color: hsl(0, 0%, 100%); /* Warna putih untuk teks profil */
+        font-size: 1.1em;
+        text-align: left;
+      }
+
+      /* Menu Styling */
+      .w3-bar {
+        display: flex; /* Menggunakan Flexbox untuk menu horizontal */
+        justify-content: center; /* Menyusun menu di tengah secara horizontal */
+        align-items: center; /* Menyusun item secara vertikal di tengah */
+        background-color: rgba(0, 0, 0, 0.7); /* Latar belakang transparan */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      .w3-bar-item {
+        color: hwb(0 98% 2%);
+        padding: 15px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .w3-bar-item i {
+        margin-right: 10px;
+      }
+
+      .w3-bar-item:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Menghapus tombol menu hamburger (tiga garis) */
+      .menu-toggle {
+        display: none; /* Menyembunyikan tombol hamburger */
+      }
+
+      /* Media query untuk tampilan ponsel */
+      @media (max-width: 768px) {
+        .w3-bar {
+          flex-direction: row; /* Menyusun menu tetap horizontal pada ponsel */
+        }
+
+        .w3-bar-item {
+          font-size: 18px;
+          padding: 12px 20px;
+          width: auto;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body class="w3-theme-l5">
+    <!-- Video Background -->
+    <video class="background-video" autoplay loop muted>
+      <source
+        src="Telematika Dalam Kejadian Fraud di Rumah Sakit.mp4"
+        type="video/mp4"
+      />
+      Browser Anda tidak mendukung elemen video.
+    </video>
+
+    <!-- Menu -->
+    <div class="w3-bar">
+      <a href="dashboard.html" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-home w3-margin-right"></i>HOME
+      </a>
+      <a
+        href="Lokasi.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        title="Lokasi"
+      >
+        <i class="fa fa-globe"></i> Lokasi
+      </a>
+      <a
+        href="Profil.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        title="Profil"
+      >
+        <i class="fa fa-user"></i> Profil
+      </a>
+      <a
+        href="PromosiKampus.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        title="Promosi Kampus"
+      >
+        <i class="fa fa-bullhorn"></i> <span>Promosi Kampus</span>
+      </a>
+      <a
+        href="logout.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        title="Logout"
+      >
+        <i class="fa fa-sign-out"></i> Logout
+      </a>
+    </div>
+
+    <!-- Konten Profil Pengguna -->
+    <main>
+      <div class="container">
+        <h1>Profil Pengguna</h1>
+        <img src="logo lppm.jpg" alt="Foto Profil" class="profile-photo" />
+        <div class="profile-info">
+          <p><strong>Nama:</strong> LPPM Stikes Bakti Nusantara Gorontalo</p>
+          <p><strong>Email:</strong> stikesbaktara@gmail.com</p>
+          <p><strong>No. Telepon:</strong> 081234567890</p>
+          <p>
+            <strong>Alamat:</strong> Jln. Otanaha Putra, Desa. Luhu, Kec.
+            Telaga, Kab. Gorontalo
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Fungsi untuk mengaktifkan dan menonaktifkan menu di perangkat mobile
+      // Fungsi ini tidak diperlukan lagi karena tombol hamburger dihapus
+    </script>
+  </body>
+</html>
